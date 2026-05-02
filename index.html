@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Platformer</title>
+  <style>
+    body { margin: 0; background: #87ceeb; font-family: system-ui, sans-serif; }
+    .wrap { display:flex; flex-direction:column; align-items:center; padding: 16px; }
+    canvas { border: 3px solid #222; background: linear-gradient(#8ed6ff, #d7f1ff); image-rendering: pixelated; }
+    .hint { margin-top: 10px; color:#1b1b1b; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>類瑪利歐小遊戲</h1>
+    <canvas id="game" width="800" height="400"></canvas>
+    <div class="hint">操作：← → 移動、空白鍵跳躍。吃金幣、踩怪物，碰到怪物側面會重來。</div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
